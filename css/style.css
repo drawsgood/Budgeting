@@ -1,0 +1,36 @@
+body {
+	color: #FFFFFF;
+	font-family: "Helvetica";
+	background-color: #159e9a;
+}
+
+#mainForm {
+	min-width: 400px;
+	max-width: 640px;
+	margin: 0 25%;
+	padding: 50px;
+	background-color: #159e9a;
+}
+
+ul.clearListStyling {
+	list-style: none;
+}
+
+ul li {
+	margin-bottom: 12px;
+}
+
+#total {
+	list-style: none;
+	font-size: 24px;
+	font-weight: bolder;
+}
+
+#total li {
+	display: inline-block;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #ffffff;
+	padding: 24px;
+	border-radius: 10px;
+}
