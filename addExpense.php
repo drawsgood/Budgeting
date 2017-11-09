@@ -1,12 +1,17 @@
 <?php
-	$message = '';
-	$error = '';
 	 if(isset($_POST["submit"]))  
 		 {  
-		      if(empty($_POST["amount"]))  
+		      if(empty(trim($_POST["amount"]))) 
 		      {  
-		           $error = "<label class='text-danger'>Enter Number</label>";  
-		      }  
+		            header("Location: index.php");
+					exit();
+		      }
+
+		      if(empty(trim($_POST["category"]))) 
+		      {  
+		            header("Location: index.php");
+					exit();
+		      }
 		      else  
 		      {  
 		           if(file_exists('test.json'))  
@@ -14,7 +19,7 @@
 		                $current_data = file_get_contents('test.json');  
 		                $array_data = json_decode($current_data, true);  
 		                $extra = array(  
-		                     'amount'               =>     $_POST[amount],
+		                     'amount'               =>     $_POST['amount'],
 		                     'category'               =>     $_POST['category']
 		                );  
 		                $array_data[] = $extra;  
@@ -24,7 +29,7 @@
 		                     $message = "<label class='text-success'>File Appended Success fully</p>";  
 		                }  
 		                header("Location: index.php");
-						exit;
+						exit();
 		           }  
 		           else  
 		           {  
