@@ -18,6 +18,7 @@
 	</form>
 
 	<ul id="list"></ul>
+	Remaining budget for the day:
 	<ul id="total"></ul>
 
 </body>
