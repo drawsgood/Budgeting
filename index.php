@@ -39,9 +39,9 @@
 					</div>
 					<div class="row">
 						<div class="col-md-10 col-md-offset-1">
-							Remaining budget for the day:
-							<div class="panel panel-default">
-								<div class="panel-body bg-primary">
+							<h4>Remaining budget for the day:</h4>
+							<div class="panel panel-default" style="border-radius: 10px">
+								<div class="panel-body bg-primary" style="border-radius: 10px"> 
 									<p id="total"></p>
 								</div>
 							</div>
