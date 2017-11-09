@@ -7,11 +7,22 @@
 					exit();
 		      }
 
-		      if(empty(trim($_POST["category"]))) 
+
+		      if(($_POST["amount"]) == 'clearMe') 
 		      {  
-		            header("Location: index.php");
-					exit();
-		      }
+
+				$file = file_get_contents("test.json");
+				$json = json_decode($file, true);
+
+
+					    foreach($json as $key => $item) {
+					         file_put_contents('test.json', "[]");	
+	        
+					    }
+
+					   	header("Location: index.php");
+						exit();
+				  }
 		      else  
 		      {  
 		           if(file_exists('test.json'))  
@@ -36,5 +47,5 @@
 		                $error = 'JSON File not exits';  
 		           }  
 		      }  
-		 } 
+		  }
 ?>
