@@ -10,14 +10,6 @@ body {
 	background-color: #159e9a;
 }
 
-ul.clearListStyling {
-	list-style: none;
-}
-
-ul li {
-	margin-bottom: 12px;
-}
-
 #total {
 	list-style: none;
 	font-size: 24px;

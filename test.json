@@ -1,1 +1,14 @@
-[]
+[
+    {
+        "amount": "3.00",
+        "category": "coffee"
+    },
+    {
+        "amount": "5.00",
+        "category": "gas"
+    },
+    {
+        "amount": "8.95",
+        "category": "lunch"
+    }
+]
