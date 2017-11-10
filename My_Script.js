@@ -11,3 +11,12 @@ $.getJSON("test.json", function(obj) {
 	$('#total').append("<h1 class='bg-primary text-center'>$"+finalNum.toFixed(2)+"</h1>");
 });
 	});
+
+
+$(document).ready(function(){
+
+$("div.tableToggle").click(function(){
+    $("myTable").toggle();
+});
+
+});
