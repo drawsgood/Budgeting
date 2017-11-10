@@ -11,6 +11,7 @@
 	<title>Budget</title>
 </head>
 <body>
+	<span id="clock"></span>
 	<div class="container" style="margin-top:20px;">
 		<div class="row">
 			<div class="col-md-4 col-md-offset-4">
@@ -22,12 +23,12 @@
 						<form action="addExpense.php" method="POST">
 							<div class="form-group">
 								<label>Amount</label>
-								<input type="text" class="form-control" name="amount"/>
+								<input type="number" placeholder="Numbers Only" class="form-control" name="amount"/>
 								<?php if(isset($errors['amount'])) { echo $errors['amount']; } ?>
 							</div>
 							<div class="form-group">
 								<label>Name of expense</label>
-								<input type="text" class="form-control" name="category"/>
+								<input type="text" pattern="[A-Za-z\\s]*" class="form-control" name="category" placeholder="Alphabetical Characters Only" />
 							</div>
 							<button type="submit" name="submit" class="btn btn-lg btn-block btn-success">Submit</button>
 						</form>
