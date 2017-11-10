@@ -39,7 +39,7 @@
 		                {  
 		                     $message = "<label class='text-success'>File Appended Success fully</p>";  
 		                }  
-		                header("Location: index.php");
+		                header("refresh:1; url=index.php", true, 303);
 						exit();
 		           }  
 		           else  

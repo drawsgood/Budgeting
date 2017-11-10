@@ -10,5 +10,21 @@
     {
         "amount": "3.00",
         "category": "cereal"
+    },
+    {
+        "amount": "3.00",
+        "category": "pop"
+    },
+    {
+        "amount": "3.00",
+        "category": "Toys"
+    },
+    {
+        "amount": "30.01",
+        "category": "computer"
+    },
+    {
+        "amount": "2.21",
+        "category": "coffee"
     }
 ]
