@@ -8,7 +8,7 @@
 		      }
 
 
-		      if(($_POST["amount"]) == 'clearMe') 
+		      if(($_POST["category"]) == 'clearMe') 
 		      {  
 
 				$file = file_get_contents("test.json");
