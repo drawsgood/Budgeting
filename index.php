@@ -23,7 +23,7 @@
 						<form action="addExpense.php" method="POST">
 							<div class="form-group">
 								<label>Amount</label>
-								<input type="number" placeholder="Numbers Only" class="form-control" name="amount"/>
+								<input type="number" step ="0.01" placeholder="Numbers Only" class="form-control" name="amount"/>
 								<?php if(isset($errors['amount'])) { echo $errors['amount']; } ?>
 							</div>
 							<div class="form-group">
