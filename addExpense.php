@@ -16,7 +16,7 @@
 
 
 					    foreach($json as $key => $item) {
-					         file_put_contents('current.json', "[]");	
+					         file_put_contents('current.json', "{\"startingValue\": {\"fart\": 50}}");	
 	        
 					    }
 
