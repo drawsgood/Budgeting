@@ -22,7 +22,7 @@
 						<h3 class="panel-title">Bossy Budgeter</h3>
 					</div>
 					<div class="panel-body">
-						<form action="addExpense.php" method="POST">
+						<form id="myForm" action="addExpense.php" method="POST">
 							<div class="form-group">
 								<label>Amount</label>
 								<input type="number" step ="0.01" placeholder="Numbers Only" class="form-control" name="amount"/>
@@ -31,6 +31,7 @@
 							<div class="form-group">
 								<label>Name of expense</label>
 								<input type="text" pattern="[A-Za-z\\s]*" class="form-control" name="category" placeholder="Alphabetical Characters Only" />
+								<input class="hidden" type="text" id="balance" name="fart" value="50"/>
 							</div>
 							<button type="submit" name="submit" class="btn btn-lg btn-block btn-success">Submit</button>
 						</form>
@@ -54,6 +55,15 @@
 									<p id="total"></p>
 								</div>
 							</div>
+						</div>
+					</div>
+					<div style="padding: 0px 15px 0px 15px" class="row">
+						<div class="col-md-12">
+						<form id="pushNext" action="nextDay.php" method="POST">
+							<div class="form-group">
+							<button type="submit" name="submit" class="btn btn-lg btn-block btn-success">Push</button>
+						</form>
+						</div>
 						</div>
 					</div>
 				</div>
