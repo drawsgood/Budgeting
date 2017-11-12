@@ -1,6 +1,6 @@
 var finalNum = 50;
 $(document).ready(function() {
-	$.getJSON("current.json", function(obj) {
+	$.getJSON("current.json?"+Math.random(), function(obj) {
 		var myVal = obj.startingValue;
 				$.each(obj.entries, function(key, value) {
 					finalNum -= Number(value.amount);
