@@ -3,7 +3,7 @@
 		 {  
 		      if(empty(trim($_POST["amount"]))) 
 		      {  
-		            header("Location: index.php");
+		            header("Location: index.html");
 					exit();
 		      }
 
@@ -20,7 +20,7 @@
 	        
 					    }
 
-					   	header("refresh:1; url=index.php", true, 303);
+					   	header("refresh:1; url=index.html", true, 303);
 						exit();
 				  }
 		      else  
@@ -49,7 +49,7 @@
 		                //fwrite($handle, '[]');
 		                //fclose($handle);
 
-		                header("refresh:1; url=index.php", true, 303);
+		                header("refresh:1; url=index.html", true, 303);
 						exit();
 		           }  
 		           else  

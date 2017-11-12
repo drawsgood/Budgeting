@@ -19,5 +19,5 @@ setTimeout(function()
 				console.log(finalNum.toFixed(2));
 				$('input[id=balance]').attr('value', finalNum.toFixed(2));
 	});
-}, 500);
+}, 100);
 });
