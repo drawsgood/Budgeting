@@ -1,5 +1,7 @@
 var finalNum = 50;
 $(document).ready(function() {
+setTimeout(function()
+{
 	$.getJSON("current.json", function(obj) {
 
 		var myVal = obj.startingValue;
@@ -17,4 +19,5 @@ $(document).ready(function() {
 				console.log(finalNum.toFixed(2));
 				$('input[id=balance]').attr('value', finalNum.toFixed(2));
 	});
+}, 500);
 });

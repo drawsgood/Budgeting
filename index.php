@@ -1,7 +1,15 @@
+<?php
+header('Cache-Control: no-cache, no-store, must-revalidate');
+header('Pragma: no-cache');
+header('Expires: 0');
+?>
 
 <!DOCTYPE html>
 <html>
 <head>
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css" crossorigin="anonymous">
@@ -30,7 +38,7 @@
 							</div>
 							<div class="form-group">
 								<label>Name of expense</label>
-								<input type="text" pattern="[A-Za-z\\s]*" class="form-control" name="category" placeholder="Alphabetical Characters Only" />
+								<input type="text" pattern="[a-zA-Z0-9 ]+" class="form-control" name="category" placeholder="Alphabetical Characters Only" />
 								<input class="hidden" type="text" id="balance" name="fart" value="50"/>
 							</div>
 							<button type="submit" name="submit" class="btn btn-lg btn-block btn-success">Submit</button>

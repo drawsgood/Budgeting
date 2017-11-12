@@ -44,10 +44,10 @@
 		                     $message = "<label class='text-success'>File Appended Success fully</p>";  
 		                }
 
-		                $filename = 'myNewJSON.json';
-		                $handle = fopen($filename, 'w+');
-		                fwrite($handle, '[]');
-		                fclose($handle);
+		                // $filename = 'myNewJSON.json';
+		                //$handle = fopen($filename, 'w+');
+		                //fwrite($handle, '[]');
+		                //fclose($handle);
 
 		                header("refresh:1; url=index.php", true, 303);
 						exit();
